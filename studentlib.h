@@ -11,6 +11,7 @@
 #include <limits>
 #include <numeric>
 #include <vector>
+#include <fstream>
 
 using std::cout;
 using std::all_of;
@@ -31,3 +32,4 @@ using std::mt19937;
 using std::uniform_int_distribution;
 using std::streamsize;
 using std::numeric_limits;
+using std::ifstream;
