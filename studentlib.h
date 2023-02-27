@@ -1,0 +1,54 @@
+#pragma once
+#ifndef Library
+#define Library
+
+#include <iostream>
+#include <cstdlib> 
+#include <time.h> 
+#include <cctype> 
+#include <iomanip>
+#include <string>
+#include <random>
+#include <algorithm>
+#include <limits>
+#include <numeric>
+#include <vector>
+#include <fstream>
+
+using std::cout;
+using std::cerr;
+using std::cin;
+using std::all_of;
+using std::endl;
+using std::left;
+using std::right;
+using std::setw;
+using std::setprecision;
+using std::isalpha;
+using std::copy;
+using std::sort;
+using std::fixed;
+using std::string;
+using std::vector;
+using std::random_device;
+using std::mt19937;
+using std::uniform_int_distribution;
+using std::streamsize;
+using std::numeric_limits;
+using std::ifstream;
+using std::runtime_error;
+using std::bad_alloc;
+using std::bad_cast;
+using std::bad_typeid;
+using std::bad_exception;
+using std::runtime_error;
+using std::domain_error;
+using std::invalid_argument;
+using std::length_error;
+using std::out_of_range;
+using std::overflow_error;
+using std::range_error;
+using std::underflow_error;
+using std::exception;
+
+#endif
