@@ -124,41 +124,30 @@ void print(const vector<student>& students) {
 void scan(vector<student>& info, int amount, student& stud) {
     string vardas, pavarde, e, t;
     int grades, k = 0;
+    int new_grade;
     ifstream fd(CDfv);
     try {
         if (fd.is_open()) {
             fd >> vardas >> pavarde;
-            while (fd >> t && t != "Egz.")
+            string row;
+            string w;
+            getline(fd, row);
+            stringstream r(row);
+            while (r >> w)
             {
                 amount++;
             }
             while (!fd.eof())
             {
                 fd >> stud.vardas >> stud.pavarde;
-                //    cout << stud.vardas << " " << stud.pavarde << " ";
-                for (int i = 0; i < amount; i++)
+                for (int i = 0; i < amount - 1; i++)
                 {
                     fd >> grades;
-                    if (fd.fail()) {
-                        throw runtime_error("NETINKAMAS NAMU DARBU SKAICIUS");
-                    }
-                    if (grades < 0 || grades > 10 || grades == 0) {
-                        throw invalid_argument("NAMU DARBU SKAICIUS TURI BUTI TARP 1 IR 10");
-                    }
                     stud.p.push_back(grades);
-                    //       cout << stud.p[i] << " ";
-
-                }
-                if (stud.p.size() < amount) {
-                    throw runtime_error("NEPAKANKA PAZYMIU");
                 }
                 fd >> stud.e;
-                if (fd.fail()) {
-                    throw runtime_error("NETINKAMAS EGZAMINO PAZIMYS");
-                }
                 info.push_back(stud);
                 stud.p.clear();
-                //    cout << stud.e << endl;
             }
             fd.close();
         }
@@ -167,7 +156,7 @@ void scan(vector<student>& info, int amount, student& stud) {
         }
     }
     catch (const exception& e) {
-        cerr << "ERROR: " << e.what() << endl;
+        cerr << "KLAIDA: " << e.what() << endl;
     }
 }
 
