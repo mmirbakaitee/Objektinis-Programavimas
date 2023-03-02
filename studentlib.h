@@ -1,6 +1,6 @@
 #pragma once
-#ifndef Library
-#define Library
+#ifndef STUDENTLIB_H
+#define STUDENTLIB_H
 
 #include <iostream>
 #include <cstdlib> 
@@ -14,6 +14,7 @@
 #include <numeric>
 #include <vector>
 #include <fstream>
+#include <sstream>
 
 using std::cout;
 using std::cerr;
@@ -50,5 +51,5 @@ using std::overflow_error;
 using std::range_error;
 using std::underflow_error;
 using std::exception;
-
+using std::stringstream;
 #endif
