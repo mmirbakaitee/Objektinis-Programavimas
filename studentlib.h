@@ -15,6 +15,8 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+#include <chrono>
+#include <cstdio> 
 
 using std::cout;
 using std::cerr;
@@ -29,6 +31,9 @@ using std::isalpha;
 using std::copy;
 using std::sort;
 using std::fixed;
+using std::to_string; 
+using std::setfill; 
+using std::remove;
 using std::string;
 using std::vector;
 using std::random_device;
@@ -37,6 +42,7 @@ using std::uniform_int_distribution;
 using std::streamsize;
 using std::numeric_limits;
 using std::ifstream;
+using std::ofstream;  
 using std::runtime_error;
 using std::bad_alloc;
 using std::bad_cast;
@@ -52,4 +58,6 @@ using std::range_error;
 using std::underflow_error;
 using std::exception;
 using std::stringstream;
+using std::isdigit;
+
 #endif
