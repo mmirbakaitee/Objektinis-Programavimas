@@ -17,6 +17,13 @@
 #include <sstream>
 #include <chrono>
 #include <cstdio> 
+#include <stdexcept>
+#include <cstring>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <errno.h>
 
 using std::cout;
 using std::cerr;
@@ -34,6 +41,8 @@ using std::fixed;
 using std::to_string; 
 using std::setfill; 
 using std::remove;
+using std::isdigit;
+using std::swap; 
 using std::string;
 using std::vector;
 using std::random_device;
@@ -58,6 +67,16 @@ using std::range_error;
 using std::underflow_error;
 using std::exception;
 using std::stringstream;
-using std::isdigit;
+
+#ifndef S_ISREG
+#define S_ISREG(mode) (((mode) & S_IFMT) == S_IFREG)
+#endif
+
+#ifdef _WIN32
+#include <io.h> 
+#define access    _access_s
+#else
+#include <unistd.h>
+#endif
 
 #endif
