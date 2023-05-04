@@ -150,12 +150,12 @@ TASK MANAGER STATS (atmintis su 1000000):
           
 NAUDOJIMOSI INSTRUKCIJA:
 
-   1. Parsisiųskite šiuos failus:
-           a) final.v.1.0.vector.cpp, final.v.1.0.deque.cpp, final.v.1.0.list.cpp
-           b) vsourceV.cpp, vsourceD.cpp, vsourceL.cpp
-           c) vheaderisV.h, vheaderisD.h, vheaderisL.h
-           d) studentlib.h, kursiokai.txt, CMakeLists.txt
-       2. Sudėkite juos į vieną sukurtą folderį (pareadaguokite CMakeLists.txt faile projekto pavadinimą pagal sukurto aplanko pavadinimą).
-       3. Build'inkite CMakeLists.txt
-       4. Terminale build/<paleidziamojofailopavadinimas>.exe
+        1. Parsisiųskite šiuos failus:
+                a) final.v.1.0.vector.cpp, final.v.1.0.deque.cpp, final.v.1.0.list.cpp
+                b) vsourceV.cpp, vsourceD.cpp, vsourceL.cpp
+                c) vheaderisV.h, vheaderisD.h, vheaderisL.h
+                d) studentlib.h, kursiokai.txt, CMakeLists.txt
+            2. Sudėkite juos į vieną sukurtą folderį (pareadaguokite CMakeLists.txt faile projekto pavadinimą pagal sukurto aplanko pavadinimą).
+            3. Build'inkite CMakeLists.txt
+            4. Terminale build/<paleidziamojofailopavadinimas>.exe
 
