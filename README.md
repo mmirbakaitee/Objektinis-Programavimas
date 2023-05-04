@@ -148,32 +148,14 @@ TASK MANAGER STATS (atmintis su 1000000):
           2 strategija: 75%
           
           
-          
-          
-          
 NAUDOJIMOSI INSTRUKCIJA:
 
-          1. Norėdami paleisti VECTOR tipo projektą parsisiųskite šiuos failus:
-               a) final.v.1.0.vector.cpp
-               b) vsourceV.cpp
-               c) studentlib.h
-               d) vheaderisV.h
-               e) kursiokai.txt
-             Sujunkite šiuos failus į vieną projektą ir programa turėtų sėkmingai veikti. Tolimesnes instrukcijas rasite paleidę programą.
-             
-          2. Norėdami paleisti DEQUE tipo projektą parsisiųskite šiuos failus:
-               a) final.v.1.0.deque.cpp
-               b) vsourceD.cpp
-               c) studentlib.h
-               d) vheaderisD.h
-               e) kursiokai.txt
-             Sujunkite šiuos failus į vieną projektą ir programa turėtų sėkmingai veikti. Tolimesnes instrukcijas rasite paleidę programą.
-             
-          3. Norėdami paleisti LIST tipo projektą parsisiųskite šiuos failus:
-               a) final.v.1.0.list.cpp
-               b) vsourceL.cpp
-               c) studentlib.h
-               d) vheaderisL.h
-               e) kursiokai.txt
-             Sujunkite šiuos failus į vieną projektą ir programa turėtų sėkmingai veikti. Tolimesnes instrukcijas rasite paleidę programą.
+   1. Parsisiųskite šiuos failus:
+           a) final.v.1.0.vector.cpp, final.v.1.0.deque.cpp, final.v.1.0.list.cpp
+           b) vsourceV.cpp, vsourceD.cpp, vsourceL.cpp
+           c) vheaderisV.h, vheaderisD.h, vheaderisL.h
+           d) studentlib.h, kursiokai.txt, CMakeLists.txt
+       2. Sudėkite juos į vieną sukurtą folderį (pareadaguokite CMakeLists.txt faile projekto pavadinimą pagal sukurto aplanko pavadinimą).
+       3. Build'inkite CMakeLists.txt
+       4. Terminale build/<paleidziamojofailopavadinimas>.exe
 
